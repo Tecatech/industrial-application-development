@@ -56,5 +56,75 @@ class User {
 Вывод консоли:
 
 ```bash
-at User.factorial(main.java:10)
+$ javac main.java
+$ java User
+Exception in thread "main" java.lang.StackOverflowError: Java stack space
+        at User.factorial(main.java:10)
 ```
+
+## Кучная память в Java
+
+Используется для выделения памяти под объекты и классы `JRE`. Объект всегда создаётся в куче, в то время как ссылка на него хранится в стеке. Доступ к памяти кучи происходит относительно медленнее, чем к стековой памяти ввиду задействования сборщика мусора, занимающегося удалением неиспользуемых объектов. Если кучная память заполнена, то `JVM` генерирует исключение `java.lang.OutOfMemoryError`.
+
+Иллюстрация:
+
+```java
+import java.io.*
+
+class User {
+    static class Student {
+        int ID;
+        String name;
+        
+        Student(int ID, String name) {
+            this.ID = ID;
+            this.name = name;
+        }
+    }
+    
+    public static void main (String[] args) {
+        int ID = 1;
+        String name = "Sanya";
+        
+        Student st = new Student(ID, name);
+        System.out.println("Student ID: " + st.ID);
+        System.out.println("Student name: " + st.name);
+    }
+}
+```
+
+Вывод консоли:
+
+```bash
+$ javac main.java
+$ java User
+Student ID: 1
+Student name: Sanya
+```
+
+## Ошибка кучной памяти
+
+Всякий раз, когда мы создаем много новых объектов в памяти кучи, а для новых экземпляров не остается места, `JVM` выбрасывает исключение `java.lang.OutOfMemoryError`. Сборщик мусора удаляет объекты без ссылок, но не может стереть объекты, имеющие ссылки. Этого можно избежат посредством удаления ссылок на нежелательные объекты.
+
+Иллюстрация:
+
+```java
+import java.io.*
+
+class User {
+    public static void main (String[] args) {
+        Long a[] = new Long[100000 * 10000];
+    }
+}
+```
+
+Вывод консоли:
+
+```bash
+$ javac main.java
+$ java User
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+        at User.main(main.java:5)
+```
+
+Пояснение: в приведённом примере осуществляется попытка инициализации массива с очень большим размером, и кучи оказывается недостаточно для выделения памяти под этот массив.
