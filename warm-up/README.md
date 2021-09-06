@@ -13,7 +13,7 @@
 Иллюстрация:
 
 ```java
-import java.io.*
+import java.io.*;
 
 class User {
     public static void main (String[] args) {
@@ -39,7 +39,7 @@ class User {
 Рассмотрим пример вычисления факториала числа, чтобы проиллюстрировать вышесказанное:
 
 ```java
-import java.io.*
+import java.io.*;
 
 class User {
     public static void main (String[] args) {
@@ -58,7 +58,7 @@ class User {
 ```bash
 $ javac main.java
 $ java User
-Exception in thread "main" java.lang.StackOverflowError: Java stack space
+Exception in thread "main" java.lang.StackOverflowError
         at User.factorial(main.java:10)
 ```
 
@@ -69,7 +69,7 @@ Exception in thread "main" java.lang.StackOverflowError: Java stack space
 Иллюстрация:
 
 ```java
-import java.io.*
+import java.io.*;
 
 class User {
     static class Student {
@@ -109,7 +109,7 @@ Student name: Sanya
 Иллюстрация:
 
 ```java
-import java.io.*
+import java.io.*;
 
 class User {
     public static void main (String[] args) {
