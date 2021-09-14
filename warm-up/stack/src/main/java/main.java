@@ -1,7 +1,7 @@
 import java.io.*;
 
 class User {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int n = 5;
         System.out.println(factorial(n));
     }
