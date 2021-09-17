@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>User</mainClass>
+                            <mainClass>org.tecatech.stack.User</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

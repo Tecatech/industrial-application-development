@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>List</mainClass>
+                            <mainClass>ru.mephi.list.List</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

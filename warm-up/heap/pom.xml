@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>User</mainClass>
+                            <mainClass>org.tecatech.heap.User</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -1,4 +1,4 @@
-import java.io.*;
+package org.tecatech.stack;
 
 class User {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-import java.io.*;
+package org.tecatech.heap;
 
 class User {
     static class Student {

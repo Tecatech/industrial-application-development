@@ -1,9 +1,9 @@
-import java.io.*;
+package ru.mephi.list;
 
 public class List {
     private int length;
     private int capacity;
-    private Object data[];
+    private Object[] data;
     
     public List() {
         length = 0;
@@ -16,9 +16,7 @@ public class List {
         capacity = 2 * length;
         data = new Object[capacity];
         
-        for (int i = 0; i < length; i++) {
-            data[i] = values[i];
-        }
+        System.arraycopy(values, 0, data, 0, length);
     }
     
     public void add(Object value) {
@@ -34,8 +32,8 @@ public class List {
         if (index >= 0 && index < length) {
             Object temp = data[index];
             
-            for (int i = index; i < length - 1; i++) {
-                data[i] = data[i + 1];
+            if (length - 1 - index >= 0) {
+                System.arraycopy(data, index + 1, data, index, length - 1 - index);
             }
             
             length--;
@@ -47,9 +45,7 @@ public class List {
     
     public void add(Object value, int index) {
         if (index >= 0 && index < length) {
-            for (int i = length; i > index; i--) {
-                data[i] = data[i - 1];
-            }
+            System.arraycopy(data, index, data, index + 1, length - index);
             
             data[index] = value;
             length++;
@@ -78,11 +74,7 @@ public class List {
     }
     
     public boolean contains(Object value) {
-        if (indexOf(value) != -1) {
-            return true;
-        }
-        
-        return false;
+        return indexOf(value) != -1;
     }
     
     public Object set(Object value, int index) {
@@ -100,11 +92,7 @@ public class List {
     }
     
     public boolean Empty() {
-        if (size() == 0) {
-            return true;
-        }
-        
-        return false;
+        return size() == 0;
     }
     
     public Object last() {
@@ -112,10 +100,10 @@ public class List {
     }
     
     private void resize() {
-        Object temp[] = new Object[2 * capacity];
+        Object[] temp = new Object[2 * capacity];
         
-        for (int i = 0; i < capacity; i++) {
-            temp[i] = data[i];
+        if (capacity >= 0) {
+            System.arraycopy(data, 0, temp, 0, capacity);
         }
         
         capacity *= 2;
@@ -167,7 +155,7 @@ public class List {
         includes2 = list.contains('M');
         includes3 = list.contains(9.48);
         System.out.println("list.contains(5) = " + includes1);
-        System.out.println("list.contains(\'M\') = " + includes2);
+        System.out.println("list.contains('M') = " + includes2);
         System.out.println("list.contains(9.48) = " + includes3);
         System.out.println("---------------------------");
         
