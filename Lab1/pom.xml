@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.mephi</groupId>
-    <artifactId>list</artifactId>
+    <artifactId>lab1</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ru.mephi.list.List</mainClass>
+                            <mainClass>ru.mephi.lab1.List</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

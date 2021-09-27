@@ -1,4 +1,4 @@
-package ru.mephi.list;
+package ru.mephi.lab1;
 
 public class List {
     private int length;
