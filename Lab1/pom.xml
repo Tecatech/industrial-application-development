@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ru.mephi.lab1.List</mainClass>
+                            <mainClass>ru.mephi.lab1.Map</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

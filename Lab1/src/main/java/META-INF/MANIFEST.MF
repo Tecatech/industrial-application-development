@@ -1,3 +1,2 @@
 Manifest-Version: 1.0
-Main-Class: ru.mephi.lab1.List
-
+Main-Class: ru.mephi.lab1.Map
