@@ -70,7 +70,7 @@ public class DoublyLinkedList {
             tail = newNode;
             tail.setNext(null);
         }
-
+        
         length++;
     }
     
