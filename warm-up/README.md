@@ -15,8 +15,8 @@
 ```java
 import java.io.*;
 
-class User {
-    public static void main (String[] args) {
+public class User {
+    public static void main(String[] args) {
         int a[] = new int[5];
     }
 }
@@ -46,7 +46,7 @@ public class User {
         return n * factorial(n - 1);
     }
     
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int n = 5;
         System.out.println(factorial(n));
     }
@@ -82,7 +82,7 @@ public class User {
         }
     }
     
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         int ID = 1;
         String name = "Sanya";
         
@@ -112,7 +112,7 @@ Student name: Sanya
 import java.io.*;
 
 public class User {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Long a[] = new Long[100000 * 10000];
     }
 }

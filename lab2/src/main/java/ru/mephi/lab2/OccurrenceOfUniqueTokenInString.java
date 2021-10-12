@@ -3,7 +3,7 @@ package ru.mephi.lab2;
 import java.util.*;
 
 public class OccurrenceOfUniqueTokenInString {
-    public static String tokenProcess(String inputString) {
+    public static String tokenHandle(String inputString) {
         String[] tokens = inputString.replaceAll("\\s+", " ").split(" ");
         LinkedHashSet<String> tokenHandleSet = new LinkedHashSet<>(Arrays.asList(tokens));
         return Arrays.toString(tokenHandleSet.toArray()).replaceAll("[\\[,\\]]", "");
@@ -14,7 +14,7 @@ public class OccurrenceOfUniqueTokenInString {
         System.out.print("Input: ");
         String inputString = scanner.nextLine();
         
-        String outputString = tokenProcess(inputString);
+        String outputString = tokenHandle(inputString);
         System.out.println("Output: " + outputString);
     }
 }
