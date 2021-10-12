@@ -41,14 +41,14 @@ class User {
 ```java
 import java.io.*;
 
-class User {
+public class User {
+    public static int factorial(int n) {
+        return n * factorial(n - 1);
+    }
+    
     public static void main (String[] args) {
         int n = 5;
         System.out.println(factorial(n));
-    }
-    
-    static int factorial(int n) {
-        return n * factorial(n - 1);
     }
 }
 ```
@@ -59,7 +59,7 @@ class User {
 $ javac main.java
 $ java User
 Exception in thread "main" java.lang.StackOverflowError
-        at User.factorial(main.java:10)
+        at User.factorial(main.java:5)
 ```
 
 ## Кучная память в Java
@@ -71,8 +71,8 @@ Exception in thread "main" java.lang.StackOverflowError
 ```java
 import java.io.*;
 
-class User {
-    static class Student {
+public class User {
+    public static class Student {
         int ID;
         String name;
         
@@ -111,7 +111,7 @@ Student name: Sanya
 ```java
 import java.io.*;
 
-class User {
+public class User {
     public static void main (String[] args) {
         Long a[] = new Long[100000 * 10000];
     }

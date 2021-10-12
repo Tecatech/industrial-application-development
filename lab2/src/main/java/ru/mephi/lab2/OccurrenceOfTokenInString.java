@@ -2,8 +2,8 @@ package ru.mephi.lab2;
 
 import java.util.*;
 
-class OccurrenceOfTokenInString {
-    static void tokenCount(String inputString) {
+public class OccurrenceOfTokenInString {
+    public static void tokenCount(String inputString) {
         String[] tokens = inputString.replaceAll("\\s+", " ").split(" ");
         
         HashMap<String, Integer> tokenCountMap = new HashMap<>();

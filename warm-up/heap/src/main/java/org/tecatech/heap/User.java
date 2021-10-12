@@ -1,7 +1,7 @@
 package org.tecatech.heap;
 
-class User {
-    static class Student {
+public class User {
+    public static class Student {
         int ID;
         String name;
         

@@ -89,7 +89,7 @@ public class List {
         return length;
     }
     
-    public boolean Empty() {
+    public boolean isEmpty() {
         return size() == 0;
     }
     
@@ -167,8 +167,8 @@ public class List {
         System.out.println("list.size() = " + size);
         System.out.println("---------------------------");
         
-        empty = list.Empty();
-        System.out.println("list.Empty() = " + empty);
+        empty = list.isEmpty();
+        System.out.println("list.isEmpty() = " + empty);
         System.out.println("---------------------------");
         
         for (int i = 0; i < size; i++) {

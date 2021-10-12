@@ -88,7 +88,7 @@ public class Map {
     }
     
     public boolean isEmpty() {
-        return data.Empty();
+        return data.isEmpty();
     }
     
     public static void main(String[] args) {
