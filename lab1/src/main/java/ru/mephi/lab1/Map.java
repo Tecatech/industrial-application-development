@@ -157,6 +157,7 @@ public class Map {
             System.out.println("map.getKeys().get(" + i + ") = " + key0);
             System.out.println("map.getValues().get(" + i + ") = " + value0);
         }
+        
         System.out.println("------------------------------------------");
         
         for (int i = 0; i < size; i++) {
@@ -165,6 +166,7 @@ public class Map {
             System.out.println("map.getEntries().get(" + i + ").getKey() = " + key0);
             System.out.println("map.getEntries().get(" + i + ").getValue() = " + value0);
         }
+        
         System.out.println("------------------------------------------");
     }
 }

@@ -86,9 +86,9 @@ class User {
         int ID = 1;
         String name = "Sanya";
         
-        Student st = new Student(ID, name);
-        System.out.println("Student ID: " + st.ID);
-        System.out.println("Student name: " + st.name);
+        Student student = new Student(ID, name);
+        System.out.println("Student ID: " + student.ID);
+        System.out.println("Student name: " + student.name);
     }
 }
 ```

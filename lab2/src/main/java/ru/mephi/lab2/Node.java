@@ -7,8 +7,7 @@ public class Node {
     
     public Node(long data) {
         value = data;
-        previous = null;
-        next = null;
+        previous = next = null;
     }
     
     public long getValue() {

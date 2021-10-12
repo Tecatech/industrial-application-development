@@ -4,9 +4,9 @@ import java.util.*;
 
 class OccurrenceOfTokenInString {
     static void tokenCount(String inputString) {
-        HashMap<String, Integer> tokenCountMap = new HashMap<>();
-        
         String[] tokens = inputString.replaceAll("\\s+", " ").split(" ");
+        
+        HashMap<String, Integer> tokenCountMap = new HashMap<>();
         
         for (String token : tokens) {
             if (tokenCountMap.containsKey(token)) {

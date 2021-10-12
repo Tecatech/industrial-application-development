@@ -6,8 +6,7 @@ public class DoublyLinkedList {
     private int length;
     
     public DoublyLinkedList() {
-        head = null;
-        tail = null;
+        head = tail = null;
         length = 0;
     }
     
@@ -178,8 +177,8 @@ public class DoublyLinkedList {
             Node current = head;
             
             while (index > 0) {
-               current = current.getNext();
-               index--;
+                current = current.getNext();
+                index--;
             }
             
             current.setValue(value);

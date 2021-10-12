@@ -32,9 +32,7 @@ public class List {
         if (index >= 0 && index < length) {
             Object temp = data[index];
             
-            if (length - 1 - index >= 0) {
-                System.arraycopy(data, index + 1, data, index, length - 1 - index);
-            }
+            System.arraycopy(data, index + 1, data, index, length - 1 - index);
             
             length--;
             return temp;
@@ -102,9 +100,7 @@ public class List {
     private void resize() {
         Object[] temp = new Object[2 * capacity];
         
-        if (capacity >= 0) {
-            System.arraycopy(data, 0, temp, 0, capacity);
-        }
+        System.arraycopy(data, 0, temp, 0, capacity);
         
         capacity *= 2;
         data = temp;
@@ -179,6 +175,7 @@ public class List {
             value0 = list.get(i);
             System.out.println("list.get(" + i + ") = " + value0);
         }
+        
         System.out.println("---------------------------");
     }
 }

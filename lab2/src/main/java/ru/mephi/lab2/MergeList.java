@@ -14,6 +14,7 @@ public class MergeList {
         if (head1 == null) {
             return head2;
         }
+        
         if (head2 == null) {
             return head1;
         }
