@@ -94,11 +94,19 @@ public class DoublyLinkedList {
     }
     
     public long getFirst() {
-        return (head != null) ? head.getValue() : null;
+        if (head == null) {
+            throw new IllegalStateException("Empty list");
+        }
+        
+        return head.getValue();
     }
     
     public long getLast() {
-        return (tail != null) ? tail.getValue() : null;
+        if (tail == null) {
+            throw new IllegalStateException("Empty list");
+        }
+        
+        return tail.getValue();
     }
     
     public long remove(int index) throws IndexOutOfBoundsException {
