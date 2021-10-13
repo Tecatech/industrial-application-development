@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.mephi.lab1</groupId>
-    <artifactId>Map</artifactId>
+    <groupId>org.tecatech.warmup</groupId>
+    <artifactId>HeapUser</artifactId>
     <version>1.0</version>
 
     <properties>
@@ -22,7 +22,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ru.mephi.lab1.Map.Map</mainClass>
+                            <mainClass>org.tecatech.warmup.HeapUser.HeapUser</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

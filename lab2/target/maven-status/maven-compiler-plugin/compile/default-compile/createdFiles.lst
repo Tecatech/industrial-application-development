@@ -1,3 +1,5 @@
-ru\mephi\lab2\MergeList.class
-ru\mephi\lab2\Node.class
-ru\mephi\lab2\DoublyLinkedList.class
+ru\mephi\lab2\MergeList\MergeList.class
+ru\mephi\lab2\MergeList\Node.class
+ru\mephi\lab2\MergeList\DoublyLinkedList.class
+ru\mephi\lab2\OccurrenceOfUniqueTokenInString\OccurrenceOfUniqueTokenInString.class
+ru\mephi\lab2\OccurrenceOfTokenInString\OccurrenceOfTokenInString.class
