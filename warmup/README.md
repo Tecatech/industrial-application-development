@@ -4,7 +4,7 @@
 
 Механизм выделения памяти в Java регулируется виртуальной машиной `JVM`. Она делит память на стековую и кучную следующим образом:
 
-![alt text](https://github.com/tecatech/industrial-application-development/blob/main/warmup/assets/java_memory_area_parts.png)
+![alt text](https://github.com/tecatech/industrial-application-development/blob/main/warmup/images/java_memory_area_parts.png)
 
 ## Стековая память в Java
 
