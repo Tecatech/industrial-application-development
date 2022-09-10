@@ -22,7 +22,7 @@ public class StackUser {
 }
 ```
 
-![alt text](https://github.com/tecatech/industrial-application-development/blob/main/warmup/assets/diagrammic_explanation.png)
+![alt text](https://github.com/tecatech/industrial-application-development/blob/main/warmup/images/diagrammic_explanation.png)
 
 ¬ыводы:
 
@@ -34,7 +34,7 @@ public class StackUser {
 
 ¬с€кий раз, когда мы вызываем метод, после своего выполнени€ он покидает пам€ть стека. ≈сли наши методы остаютс€ в стеке, то рано или поздно он будет заполнен. ¬ этом случае попытка добавлени€ элемента в стек приведЄт к генерации исключени€ `java.lang.StackOverflowError`. ќно выбрасываетс€, когда мы вызываем метод, а стек при этом заполнен. ¬ большинстве случаев данное €вление происходит, когда метод вызываетс€ рекурсивно без какого-либо корректного услови€ завершени€.
 
-![alt text](https://github.com/tecatech/industrial-application-development/blob/main/warmup/assets/stack_overflow.png)
+![alt text](https://github.com/tecatech/industrial-application-development/blob/main/warmup/images/stack_overflow.png)
 
 –ассмотрим пример вычислени€ факториала числа, чтобы проиллюстрировать вышесказанное:
 
